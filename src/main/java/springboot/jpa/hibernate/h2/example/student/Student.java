@@ -1,4 +1,4 @@
-package com.in28minutes.springboot.jpa.hibernate.h2.example.student;
+package springboot.jpa.hibernate.h2.example.student;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

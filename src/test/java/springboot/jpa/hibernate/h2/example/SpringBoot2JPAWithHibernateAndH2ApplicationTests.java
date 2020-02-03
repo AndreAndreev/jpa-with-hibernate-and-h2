@@ -1,4 +1,4 @@
-package com.in28minutes.springboot.jpa.hibernate.h2.example;
+package springboot.jpa.hibernate.h2.example;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

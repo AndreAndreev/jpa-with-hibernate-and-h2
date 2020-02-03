@@ -1,4 +1,4 @@
-package com.in28minutes.springboot.jpa.hibernate.h2.example;
+package springboot.jpa.hibernate.h2.example;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,8 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.in28minutes.springboot.jpa.hibernate.h2.example.student.Student;
-import com.in28minutes.springboot.jpa.hibernate.h2.example.student.StudentRepository;
+import springboot.jpa.hibernate.h2.example.student.Student;
+import springboot.jpa.hibernate.h2.example.student.StudentRepository;
 
 @SpringBootApplication
 public class SpringBoot2JPAWithHibernateAndH2Application implements CommandLineRunner {
@@ -29,7 +29,7 @@ public class SpringBoot2JPAWithHibernateAndH2Application implements CommandLineR
 
 		logger.info("Inserting -> {}", repository.save(new Student("John", "A1234657")));
 
-		logger.info("Update 10003 -> {}", repository.save(new Student(10001L, "Name-Updated", "New-Passport")));
+		logger.info("Update 10001 -> {}", repository.save(new Student(10001L, "Name-Updated", "New-Passport")));
 
 		repository.deleteById(10002L);
 
